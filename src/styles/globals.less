@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nerko+One&display=swap');
+// COLORS
+@color-dark: #232020;
+@color-light: #cee397;
+@color-variant: #F44336;
+@color-variant-two: #ff7315;
+@color-all: #3a3535;
+@color-white: #f4f4f4;
+// FONTS
+@font-1: 'Nerko One', cursive;
+@font-2: 'Lato', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;// 13px
+}
+
+body {
+  color: @color-all;
+  font-family: @font-2;
+}
+
+h1, h2, h3 {
+  font-family: @font-1;
+  font-weight: 100;
+}
+
+.btn {
+  padding: .5rem;
+  font-family: @font-2;
+  transition: .3s;
+  outline: none;
+  border: 0;
+  border-radius: .2rem;
+  cursor: pointer;
+  border-bottom: .35rem solid @color-dark;
+  background-color: fade(@color-dark, 80%);
+  color: @color-light;
+}
+
+.btn:hover {
+  background-color: fade(@color-dark, 70%);
+  color: @color-light;
+}
+
+.btn:focus {
+  transform: scale(.9);
+  border-bottom: none;
+  box-shadow: 1px 1px 6px 1px fade(@color-light, 50%);
+}
+
+.btn.btn-danger {
+  border-bottom: .35rem solid fade(@color-dark, 80%);
+  background-color: fade(@color-variant, 80%);
+  color: @color-dark;
+}
+
+.btn.btn-danger:hover {
+  background-color: fade(@color-variant, 70%);
+}
+
+.btn.btn-danger:focus {
+  transform: scale(.9);
+  border-bottom: none;
+  box-shadow: 1px 1px 6px 1px fade(@color-variant, 50%);
+}
+
+.btn.btn-outline-danger {
+  border: 1px solid;
+  border-bottom: .35rem solid fade(@color-dark, 80%);
+  background-color: @color-white;
+  color: @color-variant;
+}
+
+.btn.btn-outline-danger:hover {
+  background-color: fade(@color-variant, 70%);
+  color: @color-dark;
+}
+
+.btn.btn-outline-danger:focus {
+  transform: scale(.9);
+  border-bottom: none;
+  border: none;
+  box-shadow: 1px 1px 6px 1px fade(@color-variant, 50%);
+}
+
+.link {
+  text-decoration: none;
+  color: @color-variant-two;
+}
+
+.link:hover {
+  color: fade(@color-variant-two, 60%);
+}
+
+.badge__title {
+  padding: 1rem;
+  margin-bottom: .4rem;
+  background-color: fade(@color-dark, 80%);
+  color: @color-white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ml-2 {
+  margin-left: 1rem;
+}
+
+p {
+  margin: .4rem;
+}
