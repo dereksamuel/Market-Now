@@ -6,7 +6,7 @@ export default function useGoogleAddress(address) {
   useEffect(async () => {
     const response = await fetch(API);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     setMap(data.results[0].geometry.location);
   }, []);
   return map;
