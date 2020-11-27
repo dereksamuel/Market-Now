@@ -19,3 +19,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width:768px) {
+  .Checkout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .Checkout-content, .Checkout-sidebar {
+    grid-column: 1 / 3;
+  }
+}

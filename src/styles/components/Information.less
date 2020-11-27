@@ -32,3 +32,17 @@
     border-bottom: 1px solid;
   }
 }
+
+@media screen and (max-width:768px) {
+  .Information-content, .Information-buttons {
+    grid-column: 1 / 3;
+  }
+  .Information {
+    grid-template-columns: 1fr;
+  }
+  .Information {
+    .Information-sidebar {
+      grid-column: 1;
+    }
+  }
+}
